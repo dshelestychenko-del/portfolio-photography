@@ -45,30 +45,31 @@ export interface SiteData {
 }
 
 export const siteData: SiteData = {
-  siteName: "Photography Studio",
+  siteName: "Анастасія",
   siteUrl: "https://photography-studio.com",
-  defaultTitle: "Premium Photography for Brands | Professional Commercial Photography",
-  defaultDescription: "Creating visual stories that elevate your brand through stunning product and commercial photography. Professional photography services for businesses that value quality and creativity.",
+  defaultTitle: "Анастасія | Предметний фотограф",
+  defaultDescription: "Професійна предметна фотографія для вашого бізнесу. Створюю візуальні історії, що підкреслюють якість продукту.",
   defaultOgImage: "/og-image.jpg",
-  locale: "en_US",
-  author: "Photography Studio",
-  creator: "Photography Studio",
+  locale: "uk_UA",
+  author: "Анастасія",
+  creator: "Анастасія",
   keywords: [
-    "photography",
-    "commercial photography", 
-    "product photography",
-    "brand photography",
-    "e-commerce photography",
-    "professional photography",
-    "food photography",
-    "lifestyle photography"
+    "предметна фотографія",
+    "комерційна фотографія", 
+    "фотограф продуктів",
+    "бренд фотографія",
+    "e-commerce фотографія",
+    "професійна фотографія",
+    "фуд фотографія",
+    "лайфстайл фотографія"
   ],
   navigation: [
-    { label: "About", href: "#about" },
-    { label: "Services", href: "#services" },
-    { label: "Portfolio", href: "#portfolio" },
-    { label: "Process", href: "#process" },
-    { label: "Contact", href: "#contact" }
+    { label: "Про мене", href: "#about" },
+    { label: "Послуги", href: "#services" },
+    { label: "Портфоліо", href: "#portfolio" },
+    { label: "Прайс", href: "#pricing" },
+    { label: "Умови співпраці", href: "#terms" },
+    { label: "Контакти", href: "#contact" }
   ],
   footer: {
     brand: {
@@ -95,22 +96,12 @@ export const siteData: SiteData = {
     social: [
       {
         platform: "Instagram",
-        url: "https://instagram.com/photography",
+        url: "https://instagram.com/nastasya_br",
         icon: "instagram"
       },
       {
-        platform: "LinkedIn", 
-        url: "https://linkedin.com/in/photography",
-        icon: "linkedin"
-      },
-      {
-        platform: "Behance",
-        url: "https://behance.net/photography", 
-        icon: "behance"
-      },
-      {
         platform: "Telegram",
-        url: "https://t.me/photography",
+        url: "https://t.me/nastasya_br",
         icon: "telegram"
       }
     ],
@@ -123,28 +114,18 @@ export const siteData: SiteData = {
   socialLinks: [
     {
       platform: "Instagram",
-      url: "https://instagram.com/photography",
+      url: "https://instagram.com/nastasya_br",
       icon: "instagram"
     },
     {
-      platform: "LinkedIn",
-      url: "https://linkedin.com/in/photography", 
-      icon: "linkedin"
-    },
-    {
-      platform: "Behance",
-      url: "https://behance.net/photography",
-      icon: "behance"
-    },
-    {
       platform: "Telegram",
-      url: "https://t.me/photography",
+      url: "https://t.me/nastasya_br",
       icon: "telegram"
     }
   ],
   contact: {
-    email: "hello@photography.com",
-    phone: "+1 (555) 123-4567", 
-    location: "New York, NY"
+    email: "nastasya@example.com",
+    phone: "+38063XXXXXXX", 
+    location: "Київ, Україна"
   }
 }

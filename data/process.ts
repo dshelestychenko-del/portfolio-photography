@@ -24,60 +24,60 @@ export interface ProcessData {
 }
 
 export const processData: ProcessData = {
-  title: "Work",
-  subtitle: "Process",
-  description: "A streamlined approach to deliver exceptional results for your brand",
+  title: "Етапи",
+  subtitle: "роботи",
+  description: "Продуманий підхід для створення виняткових результатів для вашого бренду",
   steps: [
     {
       id: "discovery",
       step: "01",
-      title: "Discovery",
-      description: "We explore your brand vision, goals, and photography requirements to establish creative direction."
+      title: "Обговорення проєкту",
+      description: "Визначаємо задачі, формат зйомки, стиль та референси для встановлення креативного напрямку."
     },
     {
       id: "strategy",
       step: "02",
-      title: "Strategy",
-      description: "Comprehensive planning including shot lists, styling concepts, and scheduling for seamless execution."
+      title: "Підготовка",
+      description: "Комплексне планування, включаючи списки кадрів, стилізацію та графік для бездоглядного виконання."
     },
     {
       id: "creation",
       step: "03",
-      title: "Creation",
-      description: "Professional photography session with meticulous attention to lighting, composition, and brand essence."
+      title: "Зйомка",
+      description: "Професійна фото- або відеозйомка з уважністю до освітлення, композиції та сутності бренду."
     },
     {
       id: "refinement",
       step: "04",
-      title: "Refinement",
-      description: "Expert retouching and editing to enhance images while preserving authenticity and brand consistency."
+      title: "Обробка",
+      description: "Експертна ретуш та монтаж для покращення зображень зі збереженням автентичності та консистентності бренду."
     },
     {
       id: "delivery",
       step: "05",
-      title: "Delivery",
-      description: "Timely delivery of optimized high-resolution images ready for all your marketing channels."
+      title: "Передача матеріалів",
+      description: "Своєчасна передача оптимізованих зображень високої роздільної здатності для всіх ваших маркетингових каналів."
     }
   ],
   conditions: {
-    title: "Working",
-    subtitle: "Conditions",
+    title: "Умови",
+    subtitle: "співпраці",
     payment: {
-      title: "Payment Terms",
+      title: "Умови оплати",
       items: [
-        "50% deposit required to secure booking",
-        "Remaining 50% due upon project completion",
-        "Payment via bank transfer or PayPal",
-        "Detailed invoice provided"
+        "Передоплата 50% для бронювання",
+        "Решта 50% після завершення проєкту",
+        "Оплата через банківський переказ",
+        "Надання детального рахунку"
       ]
     },
     timeline: {
-      title: "Timeline & Delivery",
+      title: "Терміни та доставка",
       items: [
-        "Standard delivery: 5-7 business days",
-        "Express delivery available (additional fee)",
-        "2 rounds of revisions included",
-        "Secure cloud delivery of final files"
+        "Стандартне виконання: 3-5 робочих днів",
+        "Термінове виконання (додаткова плата)",
+        "2 раунди правок включено",
+        "Безпечна доставка файлів через хмарне сховище"
       ]
     }
   }

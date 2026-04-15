@@ -20,30 +20,30 @@ export interface HeroData {
 }
 
 export const heroData: HeroData = {
-  title: "Premium",
-  subtitle: "Photography",
-  description: "for Brands",
+  title: "Анастасія",
+  subtitle: "Предметний фотограф",
+  description: "Професійна фотографія для вашого бізнесу",
   ctaPrimary: {
-    text: "Discuss Your Project",
+    text: "Обговорити проєкт",
     href: "#contact"
   },
   ctaSecondary: {
-    text: "View Portfolio",
+    text: "Переглянути портфоліо",
     href: "#portfolio"
   },
   imageUrl: "/images/hero-bg.jpg",
   stats: [
     {
-      value: "500+",
-      label: "Projects"
+      value: "100+",
+      label: "Проєктів"
     },
     {
-      value: "7+",
-      label: "Years"
+      value: "3+",
+      label: "Роки досвіду"
     },
     {
-      value: "50+",
-      label: "Brands"
+      value: "30+",
+      label: "Клієнтів"
     }
   ]
 }

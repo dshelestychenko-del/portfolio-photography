@@ -11,104 +11,65 @@ export interface Service {
 export const services: Service[] = [
   {
     id: "1",
-    title: "Product Photography",
-    description: "Studio-quality shots that showcase your products in the best light",
+    title: "Предметна фотографія",
+    description: "Студійні зйомки, що показують ваші продукти у найкращому світлі",
     features: [
-      "Professional lighting",
-      "Multiple angles",
-      "Detail focus",
-      "Brand consistency"
+      "Професійне освітлення",
+      "Кілька кутів",
+      "Фокус на деталях",
+      "Бренд-консистентність"
     ],
     icon: "camera",
     popular: true
   },
   {
     id: "2",
-    title: "Brand Photography",
-    description: "Complete visual identity creation for your brand story",
+    title: "Бренд фотографія",
+    description: "Створення повної візуальної ідентичності для історії вашого бренду",
     features: [
-      "Creative direction",
-      "Campaign concepts",
-      "Style guides",
-      "Visual storytelling"
+      "Креативна режисура",
+      "Концепції кампаній",
+      "Стиль-гайди",
+      "Візуальний сторітелінг"
     ],
     icon: "brand",
     popular: false
   },
   {
     id: "3",
-    title: "E-commerce Solutions",
-    description: "Optimized imagery for online retail and marketplaces",
+    title: "E-commerce рішення",
+    description: "Оптимізовані зображення для онлайн-ритейлу та маркетплейсів",
     features: [
-      "White background",
-      "360° views",
-      "Size reference",
-      "Platform ready"
+      "Білий фон",
+      "360° огляд",
+      "Масштабна сітка",
+      "Готовність для платформ"
     ],
     icon: "commerce",
     popular: false
   },
   {
     id: "4",
-    title: "Food & Lifestyle",
-    description: "Appetizing visuals that capture taste and atmosphere",
+    title: "Фуд та лайфстайл",
+    description: "Апетитні візуали, що передають смак та атмосферу",
     features: [
-      "Food styling",
-      "Natural lighting",
-      "Texture focus",
-      "Environmental shots"
+      "Фуд стайлінг",
+      "Природне освітлення",
+      "Фокус на текстурах",
+      "Енвайронментал зйомки"
     ],
     icon: "food",
     popular: false
   },
   {
     id: "5",
-    title: "Fashion Photography",
-    description: "High-end fashion shoots for brands and magazines",
+    title: "Відео виробництво",
+    description: "Професійний відеоконтент для маркетингу та соціальних мереж",
     features: [
-      "Runway coverage",
-      "Editorial spreads",
-      "Campaign photography",
-      "Behind-the-scenes content"
-    ],
-    icon: "fashion",
-    popular: true
-  },
-  {
-    id: "6",
-    title: "Architecture & Interior",
-    description: "Capturing spaces and architectural details",
-    features: [
-      "Interior design",
-      "Architectural details",
-      "Real estate photography",
-      "Virtual tours"
-    ],
-    icon: "architecture",
-    popular: false
-  },
-  {
-    id: "7",
-    title: "Event Photography",
-    description: "Professional coverage of corporate and private events",
-    features: [
-      "Corporate events",
-      "Product launches",
-      "Conferences",
-      "Social gatherings"
-    ],
-    icon: "event",
-    popular: false
-  },
-  {
-    id: "8",
-    title: "Video Production",
-    description: "Professional video content for marketing and social media",
-    features: [
-      "Product videos",
-      "Brand documentaries",
-      "Social media content",
-      "Post-production"
+      "Продуктові відео",
+      "Брендові документальні фільми",
+      "Контент для соцмереж",
+      "Пост-продакшн"
     ],
     icon: "video",
     popular: true

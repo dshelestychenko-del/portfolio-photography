@@ -19,12 +19,12 @@ export interface AboutData {
 }
 
 export const aboutData: AboutData = {
-  name: "Photography",
-  role: "Brand & Product Photographer",
+  name: "Анастасія",
+  role: "Предметний фотограф",
   description: [
-    "With over 7 years of experience in commercial photography, I specialize in creating visual narratives that elevate brands and capture the essence of their products.",
-    "My approach combines technical precision with artistic vision, delivering images that not only look stunning but also resonate with your target audience and drive business results.",
-    "From startups to established luxury brands, I craft photography that tells your unique story and sets you apart in the marketplace."
+    "Я — Анастасія, предметний фотограф, який допомагає брендам розкривати свої продукти через стильний та продуманий візуал.",
+    "Я поєдную мінімалізм, композицію та креативні рішення, щоб кожен кадр виглядав сучасно, дорого та привабливо для вашої аудиторії.",
+    "Працюю з брендами, які цінують естетику, увагу до деталей і хочуть виділятися серед конкурентів. Моя задача — не просто зробити фото чи відео, а передати характер продукту та створити контент, який продає."
   ],
   experience: {
     years: "7+",
@@ -34,25 +34,25 @@ export const aboutData: AboutData = {
   imageUrl: "/images/about-portrait.jpg",
   achievements: [
     {
-      title: "Projects",
-      value: "500+",
-      description: "Completed projects"
+      title: "Проєкти",
+      value: "100+",
+      description: "Виконані проєкти"
     },
     {
-      title: "Experience",
-      value: "7+",
-      description: "Years in photography"
+      title: "Досвід",
+      value: "3+ роки",
+      description: "У фотографії"
     },
     {
-      title: "Brands",
-      value: "50+",
-      description: "Happy clients"
+      title: "Клієнти",
+      value: "30+",
+      description: "Задоволені клієнти"
     }
   ],
   values: [
-    "Quality over quantity",
-    "Creative excellence",
-    "Client collaboration",
-    "Technical precision"
+    "Якість понад усе",
+    "Креативна досконалість",
+    "Співпраця з клієнтом",
+    "Технічна точність"
   ]
 }

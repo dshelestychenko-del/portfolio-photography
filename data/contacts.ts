@@ -40,99 +40,83 @@ export interface ContactsData {
 }
 
 export const contactsData: ContactsData = {
-  title: "Get In",
-  subtitle: "Touch",
-  description: "Ready to create stunning visuals for your brand? Let's discuss your project",
+  title: "Обговоримо",
+  subtitle: "ваш проєкт",
+  description: "Залиште заявку, і я зв'яжуся з вами для обговорення деталей зйомки.",
   contactInfo: [
     {
-      label: "Email",
-      value: "hello@photography.com",
-      icon: "email"
-    },
-    {
-      label: "Phone",
-      value: "+1 (555) 123-4567",
+      label: "Телефон",
+      value: "+38063XXXXXXX",
       icon: "phone"
     },
     {
-      label: "Studio Location",
-      value: "123 Creative Street, Art District, NY 10001",
-      icon: "location"
+      label: "Telegram",
+      value: "@nastasya_br",
+      icon: "telegram"
     },
     {
-      label: "Business Hours",
-      value: "Monday - Friday: 9:00 AM - 6:00 PM",
-      value2: "Saturday: 10:00 AM - 4:00 PM",
-      icon: "clock"
+      label: "Instagram",
+      value: "@nastasya_br",
+      icon: "instagram"
     }
   ],
   social: {
-    title: "Follow Me",
+    title: "Слідкуйте за мною",
     links: [
       {
         platform: "Instagram",
-        url: "https://instagram.com/photography",
+        url: "https://instagram.com/nastasya_br",
         icon: "instagram"
       },
       {
-        platform: "LinkedIn",
-        url: "https://linkedin.com/in/photography",
-        icon: "linkedin"
-      },
-      {
         platform: "Telegram",
-        url: "https://t.me/photography",
+        url: "https://t.me/nastasya_br",
         icon: "telegram"
-      },
-      {
-        platform: "Behance",
-        url: "https://behance.net/photography",
-        icon: "behance"
       }
     ]
   },
   form: {
-    title: "Send a",
-    subtitle: "Message",
-    description: "Tell me about your project and I'll get back to you within 24 hours",
+    title: "Обговоримо ваш",
+    subtitle: "проєкт",
+    description: "Залиште заявку, і я зв'яжуся з вами для обговорення деталей зйомки.",
     fields: [
       {
         name: "name",
-        label: "Name",
+        label: "Ім'я",
         type: "text",
-        placeholder: "Your name",
+        placeholder: "Ваше ім'я",
         required: true
       },
       {
         name: "email",
-        label: "Email",
+        label: "Телефон або Email",
         type: "email",
-        placeholder: "your@email.com",
+        placeholder: "Ваш email або телефон",
         required: true
       },
       {
         name: "project",
-        label: "Project Type",
+        label: "Тип проєкту",
         type: "select",
-        placeholder: "Select a project type",
+        placeholder: "Оберіть тип проєкту",
         required: true,
         options: [
-          { value: "product", label: "Product Photography" },
-          { value: "brand", label: "Brand Photography" },
+          { value: "product", label: "Предметна фотографія" },
+          { value: "brand", label: "Бренд фотографія" },
           { value: "ecommerce", label: "E-commerce" },
-          { value: "food", label: "Food & Beverage" },
-          { value: "other", label: "Other" }
+          { value: "food", label: "Фуд фотографія" },
+          { value: "other", label: "Інше" }
         ]
       },
       {
         name: "message",
-        label: "Message",
+        label: "Повідомлення",
         type: "textarea",
-        placeholder: "Tell me about your project...",
+        placeholder: "Розкажіть про ваш проєкт...",
         required: true
       }
     ],
-    submitText: "Send Message",
+    submitText: "Надіслати заявку",
     submitHref: "#"
   }
 }
