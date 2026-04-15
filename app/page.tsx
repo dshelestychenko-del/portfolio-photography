@@ -6,15 +6,13 @@ import SpecialOffers from '@/components/sections/SpecialOffers'
 import Services from '@/components/sections/Services'
 import Portfolio from '@/components/sections/Portfolio'
 import Pricing from '@/components/sections/Pricing'
-import Terms from '@/components/sections/Terms'
 import WorkProcess from '@/components/sections/WorkProcess'
-import Contacts from '@/components/sections/Contacts'
 import Footer from '@/components/sections/Footer'
 import { generateMetadata } from '@/lib/seo'
 
 export const metadata: Metadata = generateMetadata({
-  title: 'Головна | Анастасія - Предметний фотограф',
-  description: 'Професійна предметна фотографія для вашого бізнесу. Створюю візуальні історії, що підкреслюють якість продукту.',
+  title: 'Headline | Nastya - Product Photographer',
+  description: 'Professional product photography for your business. Creating visual stories that highlight product quality.',
 })
 
 export default function Home() {
@@ -27,9 +25,7 @@ export default function Home() {
       <Services />
       <Portfolio />
       <Pricing />
-      <Terms />
       <WorkProcess />
-      <Contacts />
       <Footer />
     </main>
   )

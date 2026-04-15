@@ -25,7 +25,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className={inter.className}>{children}</body>
+      <body className={`${inter.className} bg-[#4D4D4D] text-white`}>{children}</body>
     </html>
   )
 }

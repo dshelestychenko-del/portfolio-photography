@@ -97,12 +97,12 @@ export default function ContactForm({ onSuccess }: ContactFormProps) {
     return (
       <div className="text-center py-8">
         <div className="w-16 h-16 bg-green-100 rounded-full mx-auto mb-4 flex items-center justify-center">
-          <svg className="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg className="w-8 h-8 text-[#171717]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
           </svg>
         </div>
-        <h3 className="text-2xl font-semibold text-gray-900 mb-2">Thank You!</h3>
-        <p className="text-gray-600 mb-6">Your message has been sent successfully. I'll get back to you soon.</p>
+        <h3 className="text-2xl font-semibold text-[#171717] mb-2">Thank You!</h3>
+        <p className="text-[#171717] mb-6">Your message has been sent successfully. I'll get back to you soon.</p>
         <button
           onClick={() => setFormState('idle')}
           className="text-orange-500 hover:text-orange-600 font-medium transition-colors duration-200"
@@ -129,7 +129,7 @@ export default function ContactForm({ onSuccess }: ContactFormProps) {
 
       <div className="grid md:grid-cols-2 gap-6">
         <div>
-          <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
+          <label htmlFor="name" className="block text-sm font-medium text-[#171717] mb-2">
             Name *
           </label>
           <input
@@ -141,10 +141,10 @@ export default function ContactForm({ onSuccess }: ContactFormProps) {
             required
             aria-invalid={isFieldInvalid('name')}
             aria-describedby={errors.name ? 'name-error' : undefined}
-            className={`w-full px-4 py-3 bg-gray-50 border rounded-xl focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all duration-300 ${
+            className={`w-full px-4 py-3 bg-[#DEDEDE] border rounded-xl focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all duration-300 ${
               isFieldInvalid('name') 
                 ? 'border-red-500 bg-red-50' 
-                : 'border-gray-200'
+                : 'border-[#171717]'
             }`}
             placeholder="Your name"
           />
@@ -156,7 +156,7 @@ export default function ContactForm({ onSuccess }: ContactFormProps) {
         </div>
 
         <div>
-          <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
+          <label htmlFor="email" className="block text-sm font-medium text-[#171717] mb-2">
             Email *
           </label>
           <input
@@ -168,10 +168,10 @@ export default function ContactForm({ onSuccess }: ContactFormProps) {
             required
             aria-invalid={isFieldInvalid('email')}
             aria-describedby={errors.email ? 'email-error' : undefined}
-            className={`w-full px-4 py-3 bg-gray-50 border rounded-xl focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all duration-300 ${
+            className={`w-full px-4 py-3 bg-[#DEDEDE] border rounded-xl focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all duration-300 ${
               isFieldInvalid('email') 
                 ? 'border-red-500 bg-red-50' 
-                : 'border-gray-200'
+                : 'border-[#171717]'
             }`}
             placeholder="your@email.com"
           />
@@ -184,7 +184,7 @@ export default function ContactForm({ onSuccess }: ContactFormProps) {
       </div>
 
       <div>
-        <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">
+        <label htmlFor="phone" className="block text-sm font-medium text-[#171717] mb-2">
           Phone (optional)
         </label>
         <input
@@ -195,10 +195,10 @@ export default function ContactForm({ onSuccess }: ContactFormProps) {
           onChange={handleInputChange}
           aria-invalid={isFieldInvalid('phone')}
           aria-describedby={errors.phone ? 'phone-error' : undefined}
-          className={`w-full px-4 py-3 bg-gray-50 border rounded-xl focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all duration-300 ${
+          className={`w-full px-4 py-3 bg-[#DEDEDE] border rounded-xl focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all duration-300 ${
             isFieldInvalid('phone') 
               ? 'border-red-500 bg-red-50' 
-              : 'border-gray-200'
+              : 'border-[#171717]'
           }`}
           placeholder="+1 (555) 123-4567"
         />
@@ -210,7 +210,7 @@ export default function ContactForm({ onSuccess }: ContactFormProps) {
       </div>
 
       <div>
-        <label htmlFor="project" className="block text-sm font-medium text-gray-700 mb-2">
+        <label htmlFor="project" className="block text-sm font-medium text-[#171717] mb-2">
           Project Type (optional)
         </label>
         <select
@@ -220,10 +220,10 @@ export default function ContactForm({ onSuccess }: ContactFormProps) {
           onChange={handleInputChange}
           aria-invalid={isFieldInvalid('project')}
           aria-describedby={errors.project ? 'project-error' : undefined}
-          className={`w-full px-4 py-3 bg-gray-50 border rounded-xl focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all duration-300 ${
+          className={`w-full px-4 py-3 bg-[#DEDEDE] border rounded-xl focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all duration-300 ${
             isFieldInvalid('project') 
               ? 'border-red-500 bg-red-50' 
-              : 'border-gray-200'
+              : 'border-[#171717]'
           }`}
         >
           <option value="">Select a project type</option>
@@ -241,7 +241,7 @@ export default function ContactForm({ onSuccess }: ContactFormProps) {
       </div>
 
       <div>
-        <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
+        <label htmlFor="message" className="block text-sm font-medium text-[#171717] mb-2">
           Message *
         </label>
         <textarea
@@ -253,10 +253,10 @@ export default function ContactForm({ onSuccess }: ContactFormProps) {
           required
           aria-invalid={isFieldInvalid('message')}
           aria-describedby={errors.message ? 'message-error' : undefined}
-          className={`w-full px-4 py-3 bg-gray-50 border rounded-xl focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all duration-300 resize-none ${
+          className={`w-full px-4 py-3 bg-[#DEDEDE] border rounded-xl focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all duration-300 resize-none ${
             isFieldInvalid('message') 
               ? 'border-red-500 bg-red-50' 
-              : 'border-gray-200'
+              : 'border-[#171717]'
           }`}
           placeholder="Tell me about your project..."
         />

@@ -68,12 +68,11 @@ export const siteData: SiteData = {
     { label: "Послуги", href: "#services" },
     { label: "Портфоліо", href: "#portfolio" },
     { label: "Прайс", href: "#pricing" },
-    { label: "Умови співпраці", href: "#terms" },
-    { label: "Контакти", href: "#contact" }
+    { label: "Умови співпраці", href: "#process" }
   ],
   footer: {
     brand: {
-      name: "Photo",
+      name: "Анастасія",
       description: "Professional brand and product photography services for businesses that value quality and creativity."
     },
     services: [
@@ -97,16 +96,16 @@ export const siteData: SiteData = {
       {
         platform: "Instagram",
         url: "https://instagram.com/nastasya_br",
-        icon: "instagram"
+        icon: "text-[#171717]"
       },
       {
         platform: "Telegram",
         url: "https://t.me/nastasya_br",
-        icon: "telegram"
+        icon: "text-[#171717]"
       }
     ],
     legal: {
-      copyright: "© 2024 Photography Studio. All rights reserved.",
+      copyright: " 2024 Photography Studio. All rights reserved.",
       privacy: "Privacy Policy",
       terms: "Terms of Service"
     }
@@ -115,12 +114,12 @@ export const siteData: SiteData = {
     {
       platform: "Instagram",
       url: "https://instagram.com/nastasya_br",
-      icon: "instagram"
+      icon: "text-[#171717]"
     },
     {
       platform: "Telegram",
       url: "https://t.me/nastasya_br",
-      icon: "telegram"
+      icon: "text-[#171717]"
     }
   ],
   contact: {

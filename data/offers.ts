@@ -23,56 +23,55 @@ export interface OffersData {
 }
 
 export const offersData: OffersData = {
-  title: "Special",
-  subtitle: "Offers",
-  description: "Exclusive packages designed to elevate your brand photography",
+  title: "Спеціальні",
+  subtitle: "пропозиції",
+  description: "Ексклюзивні пакети, розроблені для покращення фотографії вашого бренду",
   offers: [
     {
       id: "essential",
-      title: "Essential",
-      description: "Perfect for emerging brands",
+      title: "Пакет \"Знайомство\"",
+      description: "Це унікальна пропозиція для перших клієнтів, щоб ви могли оцінити якість моєї роботи та стиль.",
       features: [
-        { text: "15 product photos" },
-        { text: "Professional retouching" },
-        { text: "3-day delivery" }
+        { text: "Відео до 10 сек з фокусом на продукт" },
+        { text: "Фото у мінімалістичному або легкому композиційному стилі" },
+        { text: "Термін виконання: до 5 днів" },
+        { text: "1 відео + 3 професійних фото" }
       ],
-      price: "$599",
-      priceNote: "Starting from",
+      price: "2500 грн",
       highlighted: false,
-      buttonText: "Get Started",
+      buttonText: "Обрати пакет",
       buttonHref: "#contact"
     },
     {
       id: "professional",
-      title: "Professional",
-      description: "Most popular choice",
+      title: "Пакет \"Хочу більше\"",
+      description: "Це унікальна пропозиція для клієнтів, котрі після знайомства хочуть більше варіативності та глибшого розкриття продукту.",
       features: [
-        { text: "35 product photos" },
-        { text: "Premium retouching" },
-        { text: "Lifestyle shots" },
-        { text: "2-day delivery" }
+        { text: "Відео до 20 сек, динамічне, з розкриттям продукту" },
+        { text: "Фото: мінімалістичні, каталожні, композиційні" },
+        { text: "Термін виконання: до 7 днів" },
+        { text: "1 відео + 6 професійних фото" }
       ],
-      price: "$1299",
-      priceNote: "Most popular",
+      price: "4000 грн",
+      priceNote: "Популярний",
       highlighted: true,
-      buttonText: "Choose Professional",
+      buttonText: "Обрати пакет",
       buttonHref: "#contact"
     },
     {
       id: "premium",
-      title: "Premium",
-      description: "Complete brand solution",
+      title: "Пакет \"Максимум\"",
+      description: "Це унікальна пропозиція для брендів, які хочуть отримати повноцінний, продуманий контент, розрахований більш ніж на місяць.",
       features: [
-        { text: "60+ product photos" },
-        { text: "Ultra-premium retouching" },
-        { text: "Creative direction" },
-        { text: "Video content included" },
-        { text: "Priority delivery" }
+        { text: "Відео до 30 сек з розкриттям продукту та складною композицією" },
+        { text: "Фото: діють усі позиції" },
+        { text: "Термін виконання: до 10 днів" },
+        { text: "1 відео + 12 професійних фото" },
+        { text: "Візуал у подарунок" }
       ],
-      price: "$2499",
-      priceNote: "Best value",
+      price: "7700 грн",
       highlighted: false,
-      buttonText: "Go Premium",
+      buttonText: "Обрати пакет",
       buttonHref: "#contact"
     }
   ]

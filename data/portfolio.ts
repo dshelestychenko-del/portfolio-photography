@@ -14,99 +14,99 @@ export const portfolioItems: PortfolioItem[] = [
   {
     id: "1",
     category: "Product Photography",
-    title: "Luxury Watch Collection",
-    description: "Elegant timepieces captured with precision lighting",
+    title: "Колекція розкошних годинників",
+    description: "Елегантні годинники, зняті з точним освітленням",
     featured: true,
     imageUrl: "/images/portfolio/luxury-watches.jpg",
-    tags: ["watches", "luxury", "product"],
+    tags: ["годинники", "розкіш", "продукт"],
     client: "Swiss Watch Co.",
     year: "2024"
   },
   {
     id: "2", 
     category: "Food Photography",
-    title: "Artisan Bakery",
-    description: "Fresh breads and pastries showcasing craftsmanship",
+    title: "Пекарня-майстерня",
+    description: "Свіжий хліб та випічка, що демонструють майстерність",
     featured: false,
     imageUrl: "/images/portfolio/bakery.jpg",
-    tags: ["food", "bakery", "artisan"],
+    tags: ["їжа", "пекарня", "майстерність"],
     client: "Artisan Breads",
     year: "2024"
   },
   {
     id: "3",
     category: "Brand Photography",
-    title: "Fashion Brand Campaign",
-    description: "Complete visual identity for emerging fashion label",
+    title: "Кампанія модного бренду",
+    description: "Повна візуальна ідентичність для нової модної марки",
     featured: false,
     imageUrl: "/images/portfolio/fashion.jpg",
-    tags: ["fashion", "brand", "campaign"],
+    tags: ["мода", "бренд", "кампанія"],
     client: "Nouveau Fashion",
     year: "2023"
   },
   {
     id: "4",
     category: "E-commerce",
-    title: "Skincare Products",
-    description: "Clean, minimalist shots for online retail",
+    title: "Косметичні засоби",
+    description: "Чисті, мінімалістичні знімки для онлайн-ритейлу",
     featured: false,
     imageUrl: "/images/portfolio/skincare.jpg",
-    tags: ["skincare", "ecommerce", "beauty"],
+    tags: ["косметика", "e-commerce", "краса"],
     client: "Glow Beauty",
     year: "2024"
   },
   {
     id: "5",
     category: "Lifestyle",
-    title: "Coffee Brand Story",
-    description: "Authentic moments and product integration",
+    title: "Історія кав'яного бренду",
+    description: "Аутентичні моменти та інтеграція продукту",
     featured: true,
     imageUrl: "/images/portfolio/coffee.jpg",
-    tags: ["coffee", "lifestyle", "brand"],
+    tags: ["кава", "лайфстайл", "бренд"],
     client: "Morning Roast",
     year: "2023"
   },
   {
     id: "6",
     category: "Product Photography",
-    title: "Jewelry Collection",
-    description: "Detailed shots highlighting fine craftsmanship",
+    title: "Колекція прикрас",
+    description: "Детальні знімки, що підкреслюють високу майстерність",
     featured: false,
     imageUrl: "/images/portfolio/jewelry.jpg",
-    tags: ["jewelry", "product", "luxury"],
+    tags: ["прикраси", "продукт", "розкіш"],
     client: "Elegant Gems",
     year: "2024"
   },
   {
     id: "7",
     category: "Food Photography",
-    title: "Restaurant Menu",
-    description: "Culinary artistry for fine dining establishment",
+    title: "Меню ресторану",
+    description: "Кулінарне мистецтво для закладу високої кухні",
     featured: false,
     imageUrl: "/images/portfolio/restaurant.jpg",
-    tags: ["food", "restaurant", "fine-dining"],
+    tags: ["їжа", "ресторан", "вища кухня"],
     client: "Le Gourmet",
     year: "2023"
   },
   {
     id: "8",
     category: "Brand Photography",
-    title: "Tech Startup",
-    description: "Modern tech company visual identity",
+    title: "Технологічний стартап",
+    description: "Сучасна візуальна ідентичність технологічної компанії",
     featured: true,
     imageUrl: "/images/portfolio/tech.jpg",
-    tags: ["tech", "startup", "corporate"],
+    tags: ["технології", "стартап", "корпоративний"],
     client: "InnovateTech",
     year: "2024"
   },
   {
     id: "9",
     category: "E-commerce",
-    title: "Home Decor",
-    description: "Stylish home accessories for online store",
+    title: "Декор для дому",
+    description: "Стильні аксесуари для дому для онлайн-магазину",
     featured: false,
     imageUrl: "/images/portfolio/decor.jpg",
-    tags: ["decor", "home", "ecommerce"],
+    tags: ["декор", "дім", "e-commerce"],
     client: "HomeStyle",
     year: "2023"
   }
@@ -126,7 +126,22 @@ export const getPortfolioItems = (category?: string, featured?: boolean): Portfo
   return filtered
 }
 
-export const getPortfolioCategories = (): string[] => {
-  const categories = portfolioItems.map(item => item.category)
-  return Array.from(new Set(categories))
+export function getPortfolioCategories(): string[] {
+  const categories = Array.from(new Set(portfolioItems.map(item => item.category)))
+  return categories.map(cat => {
+    switch(cat) {
+      case 'Product Photography':
+        return 'Предметна фотографія'
+      case 'Food Photography':
+        return 'Фуд фотографія'
+      case 'Brand Photography':
+        return 'Бренд фотографія'
+      case 'E-commerce':
+        return 'E-commerce'
+      case 'Lifestyle':
+        return 'Лайфстайл'
+      default:
+        return cat
+    }
+  })
 }

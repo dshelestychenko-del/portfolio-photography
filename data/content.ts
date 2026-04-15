@@ -70,9 +70,9 @@ export const offersContent = {
 }
 
 export const servicesContent = {
-  title: "Premium",
-  titleAccent: "Services",
-  subtitle: "Specialized photography solutions crafted for your brand's unique needs",
+  title: "Преміум",
+  titleAccent: "послуги",
+  subtitle: "Спеціалізовані фоторішення, розроблені з урахуванням унікальних потреб вашого бренду",
   services: [
     {
       title: "Product Photography",
@@ -114,14 +114,13 @@ export const servicesContent = {
         "Environmental shots"
       ]
     }
-  ],
-  button: "Discuss Your Needs"
+  ]
 }
 
 export const portfolioContent = {
-  title: "Recent",
-  titleAccent: "Work",
-  subtitle: "Explore my latest creative projects and brand collaborations",
+  title: "Портфоліо",
+  titleAccent: "",
+  subtitle: "Мої останні роботи та проєкти",
   items: [
     {
       category: "Product Photography",
@@ -160,7 +159,7 @@ export const portfolioContent = {
       featured: false
     }
   ],
-  button: "View Complete Portfolio"
+  button: ""
 }
 
 export const processContent = {

@@ -10,26 +10,30 @@ export interface HeroData {
   ctaPrimary: {
     text: string
     href?: string
+    color: string
   }
   ctaSecondary?: {
     text: string
     href?: string
+    color: string
   }
   imageUrl?: string
   stats?: HeroStats[]
 }
 
 export const heroData: HeroData = {
-  title: "Анастасія",
-  subtitle: "Предметний фотограф",
-  description: "Професійна фотографія для вашого бізнесу",
+  title: "Предметний фотограф",
+  subtitle: "Професійна фотографія для вашого бізнесу",
+  description: "",
   ctaPrimary: {
     text: "Обговорити проєкт",
-    href: "#contact"
+    href: "#contact",
+    color: "#171717"
   },
   ctaSecondary: {
     text: "Переглянути портфоліо",
-    href: "#portfolio"
+    href: "#portfolio",
+    color: "#171717"
   },
   imageUrl: "/images/hero-bg.jpg",
   stats: [

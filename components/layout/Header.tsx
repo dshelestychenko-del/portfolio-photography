@@ -62,10 +62,10 @@ export default function Header() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <h1 className="text-2xl font-bold text-gray-900">
-              {siteData.footer.brand.name}
-              <span className="text-orange-500">graphy</span>
-            </h1>
+            <h1 className="text-2xl font-bold">
+  <span className="text-gray-900">Анастасія </span>
+  <span className="text-[#F25623]">Браєрська</span>
+</h1>
           </div>
 
           {/* Desktop Navigation */}
