@@ -1,4 +1,6 @@
 import { siteData } from '@/data/site'
+import { Phone, Send } from "lucide-react"
+import { FaInstagram } from "react-icons/fa"
 
 export default function Footer() {
   return (
@@ -19,32 +21,19 @@ export default function Footer() {
           
           <div>
             <h4 className="text-lg font-semibold mb-6">Contact</h4>
-            <ul className="space-y-4 text-[#171717]">
-              <li className="flex items-center gap-3">
-                <div className="w-5 h-5 bg-[#F25623] rounded-lg flex items-center justify-center">
-                  <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
-                    <path d="M2 3a1 1 0 011-1h14a1 1 0 011 1v14a1 1 0 01-1 1H3a1 1 0 01-1-1V3a1 1 0 011-1zM3 7h14v10H3V7z"/>
-                  </svg>
-                </div>
-                <span>+38063XXXXXXX</span>
-              </li>
-              <li className="flex items-center gap-3">
-                <div className="w-5 h-5 bg-[#F25623] rounded-lg flex items-center justify-center">
-                  <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15h-4v-6h4v6zm2-8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9 0 2 .9 2 2z"/>
-                  </svg>
-                </div>
-                <span>@nastasya_br</span>
-              </li>
-              <li className="flex items-center gap-3">
-                <div className="w-5 h-5 bg-[#F25623] rounded-lg flex items-center justify-center">
-                  <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M12 2.163c3.204 0 5.99 1.53 5.99 3.689 0 2.078-1.679 3.764-3.78 3.764-2.051 0-3.728-1.652-3.728-3.689h-3.972c.019.337.039.678.039 1.018 0 .665-.03 1.312-.039 1.942h3.972c.019 2.083 1.53 3.78 3.78 2.251 0 3.764-1.689 3.764-3.78v-3.972c0-2.083-1.529-3.78-3.78-3.78z"/>
-                  </svg>
-                </div>
-                <span>@nastasya_br</span>
-              </li>
-            </ul>
+            <div className="flex gap-6 items-center justify-center">
+              <a href="tel:+38063XXXXXXX">
+                <Phone className="text-[#F25623] w-6 h-6 transition hover:scale-110 hover:text-[#171717]" />
+              </a>
+
+              <a href="https://t.me/nastasya_br" target="_blank">
+                <Send className="text-[#F25623] w-6 h-6 transition hover:scale-110 hover:text-[#171717]" />
+              </a>
+
+              <a href="https://instagram.com/nastasya_br" target="_blank">
+                <FaInstagram className="text-[#F25623] w-6 h-6 transition-all duration-300 hover:scale-110 hover:text-[#171717]" />
+              </a>
+            </div>
           </div>
         </div>
         
