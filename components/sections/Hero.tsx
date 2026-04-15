@@ -22,7 +22,7 @@ export default function Hero() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">
             <div className="space-y-4">
-              <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#171717] leading-tight">
+              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#171717] leading-tight">
                 {heroData.title}
                 <br />
                 <span className="text-[#F25623]">{heroData.subtitle}</span>

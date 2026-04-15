@@ -10,8 +10,7 @@ export default function About() {
             <div>
               <h2 className="text-4xl md:text-5xl font-bold text-[#171717] mb-6">
                 <span>Про</span>
-                <br />
-                мене
+                <span className="text-[#F25623]"> мене</span>
               </h2>
               <div className="w-20 h-1 bg-orange-500 mb-8"></div>
             </div>

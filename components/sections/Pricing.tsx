@@ -7,7 +7,7 @@ export default function Pricing() {
     <section id="pricing" className="py-24 bg-transparent">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-[#171717] mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-center text-[#F25623] mb-6">
             {pricingData.photography.title}
           </h2>
           <p className="text-xl text-[#171717] max-w-3xl mx-auto leading-relaxed">
@@ -17,10 +17,10 @@ export default function Pricing() {
 
         {/* Photography Categories */}
         <div className="mb-20">
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-2 gap-8">
             {pricingData.photography.categories.map((category, categoryIndex) => (
-              <div key={categoryIndex} className="bg-transparent rounded-2xl p-6 shadow-lg">
-                <h3 className="text-xl font-semibold text-[#171717] mb-6">
+              <div key={categoryIndex} className="bg-[#DEDEDE] rounded-2xl p-8 shadow-lg">
+                <h3 className="text-2xl font-bold text-[#171717] mb-6">
                   {category.title}
                 </h3>
                 <div className="space-y-4">
@@ -28,7 +28,7 @@ export default function Pricing() {
                     <div key={itemIndex} className="border-b border-[#171717] pb-4 last:border-0">
                       <div className="flex justify-between items-start mb-2">
                         <h4 className="font-medium text-[#171717]">{item.title}</h4>
-                        <span className="text-orange-500 font-semibold">{item.price}</span>
+                        <span className="text-[#F25623] font-semibold">{item.price}</span>
                       </div>
                       {item.description && (
                         <p className="text-sm text-[#171717]">{item.description}</p>
@@ -43,7 +43,7 @@ export default function Pricing() {
 
         {/* Packages */}
         <div className="mb-20">
-          <h3 className="text-3xl font-bold text-center text-[#171717] mb-12">
+          <h3 className="text-4xl md:text-5xl font-bold text-center text-[#F25623] mb-6">
             {pricingData.packages.title}
           </h3>
           <div className="grid md:grid-cols-3 gap-8">
@@ -83,7 +83,7 @@ export default function Pricing() {
 
         {/* Video */}
         <div>
-          <h3 className="text-3xl font-bold text-center text-[#171717] mb-12">
+          <h3 className="text-4xl md:text-5xl font-bold text-center text-[#F25623] mb-6">
             {pricingData.video.title}
           </h3>
           <div className="grid md:grid-cols-3 gap-8">
