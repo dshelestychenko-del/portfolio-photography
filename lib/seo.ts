@@ -38,7 +38,7 @@ export function generateMetadata(metadata: SeoMetadata = {}): Metadata {
       url,
       siteName: siteData.siteName,
       locale: siteData.locale,
-      type,
+      type: "website",
       images: [
         {
           url: image,
